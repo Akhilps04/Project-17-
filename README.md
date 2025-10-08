@@ -59,7 +59,7 @@ Adds technical indicators using `TA-Lib`:
 ---
 
 ## ⚙️ Installation & Usage
-```bash
+
 # Clone this repository
 git clone https://github.com/yourusername/stock-market-rf.git
 cd stock-market-rf
