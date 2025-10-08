@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header-section">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">📊</div>
+                    <div class="logo-text">
+                        <h1>StockPredict</h1>
+                        <span>Market Analytics</span>
+                    </div>
+                </div>
+                <div class="market-status">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span>Market Open</span>
+                    </div>
+                    <div class="current-time" id="currentTime"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="chart-section">
+                <div class="chart-title">MARKET CHART WITH PREDICTED GRAPH</div>
+                <div class="chart-subtitle">(This should be the main window (taken down to this size))</div>
+                <div class="chart-container">
+                    <canvas id="stockChart"></canvas>
+                </div>
+                <div class="chart-controls">
+                    <button id="playPauseBtn" class="control-btn">⏸️ Pause</button>
+                    <button id="downloadBtn" class="control-btn">📥 Download Data</button>
+                    <div class="speed-control">
+                        <label>Speed:</label>
+                        <input type="range" id="speedSlider" min="1" max="10" value="5">
+                        <span id="speedValue">5x</span>
+                    </div>
+                </div>
+                <div class="live-stock-info">LIVE STOCK: <span id="liveStockPrice">--</span></div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-title">Currently Active Stocks</div>
+                <div class="stock-list scrollable">
+                    <div class="stock-item">📈 BULL (3 each) - Optimistic traders expecting price increases</div>
+                    <div class="stock-item">📉 BEARISH (3 each) - Pessimistic traders expecting price decreases</div>
+                    <div class="stock-item">🚀 MOMENTUM (2 each) - Following trend direction</div>
+                    <div class="stock-item">⚡ VOLATILE (1 each) - High volatility traders</div>
+                    <div class="stock-item">🎯 TARGET (4 each) - Specific price target traders</div>
+                    <div class="stock-item">⏰ DAY TRADERS (2 each) - Short-term position holders</div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="bottom-sections">
+            <section class="previous-quarterly-data">
+                <div class="section-title">Previous Quarterly data</div>
+                <div class="section-subtitle">(Ranging from yearly/monthly/weekly)</div>
+                <div id="historicalDataTable">
+                    Loading historical data...
+                </div>
+            </section>
+
+            <section class="news-section">
+                <div class="section-title">NEWS</div>
+                <div class="news-content scrollable">
+                    <div class="news-item">📰 Apple Inc. reports strong Q4 earnings, stock up 3.2%</div>
+                    <div class="news-item">💼 Federal Reserve hints at potential rate cuts in 2025</div>
+                    <div class="news-item">🌍 Global markets show mixed signals amid economic uncertainty</div>
+                    <div class="news-item">📊 Tech sector leads market gains with 2.1% increase</div>
+                    <div class="news-item">⚡ Tesla announces new battery technology breakthrough</div>
+                    <div class="news-item">🏦 Banking sector shows resilience despite economic headwinds</div>
+                    <div class="news-item">📈 Oil prices stabilize after recent volatility</div>
+                    <div class="news-item">💡 AI stocks continue to outperform market expectations</div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
