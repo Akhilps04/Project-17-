@@ -1,5 +1,6 @@
 ## Stock Market Prediction using Random Forest
-This project predicts stock prices using a **Random Forest Regressor**, a robust machine learning model for regression tasks. The system fetches real stock data, extracts key indicators, trains the model, and visualizes predictions on a dynamic web dashboard.
+This project predicts stock prices using a **Random Forest Regressor**, a robust machine learning model for regression tasks.
+The system fetches real stock data, extracts key indicators, trains the model, and visualizes predictions on a dynamic web dashboard.
 ---
 
 ## 🚀 Features
@@ -96,7 +97,9 @@ Integrated model into an interactive web dashboard.
 
 ## 🏁 Conclusion
 
-While Random Forest provides a good baseline for stock prediction, the results show that LSTM networks outperform traditional ML models in capturing time-dependent financial patterns. This project serves as a solid introduction to end-to-end stock market prediction and visualization.
+While Random Forest provides a good baseline for stock prediction, the results show that LSTM networks outperform traditional
+ML models in capturing time-dependent financial patterns. This project serves as a solid introduction to end-to-end stock 
+market prediction and visualization.
 
 ---
 
