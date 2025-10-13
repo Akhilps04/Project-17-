@@ -103,6 +103,8 @@ market prediction and visualization.
 
 ---
 
+<img width="1919" height="1021" alt="Screenshot 2025-10-07 094802" src="https://github.com/user-attachments/assets/f2414d0b-ba6a-4300-b968-be6e45ede8bb" />
+
 # Acknowledgments
 Thanks to my mentors and colleagues for their guidance.
 
